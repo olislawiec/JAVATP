@@ -1,4 +1,3 @@
-import static org.junit.Assert.*;
 import junit.framework.TestCase;
 
 public class LiczbaOTest4 extends TestCase 
