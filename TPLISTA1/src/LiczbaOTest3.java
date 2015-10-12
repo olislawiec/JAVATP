@@ -14,10 +14,11 @@ public class LiczbaOTest3 extends TestCase {
     
  public void testLiczbaBasedOn() throws LiczbaException {
         
-            assertTrue("b³d assert True", naturalna.liczbaBasedOn(2).equals(new String("1100100")));       //bada poprawnosc warunków
-            assertEquals("B³d","1100100", naturalna.liczbaBasedOn(2));                                                                     //czy poprawna konwersja
-            assertFalse("b³d assert False", naturalna.liczbaBasedOn(2).equals(new String("1100110")));     //bada poprawnosc warunków
-            assertNotNull(naturalna.liczbaBasedOn(2));                                                      // czy podana referencja wskazuje na obiekt
+            assertTrue("blad assert True", naturalna.liczbaBasedOn(2).equals(new String("1100100")));       //bada poprawnosc warunków
+            assertEquals("blad","1100100", naturalna.liczbaBasedOn(2));                                                                     //czy poprawna konwersja
+            assertFalse("blad assert False", naturalna.liczbaBasedOn(2).equals(new String("1100110")));     //bada poprawnosc warunków
+            assertNotNull(naturalna.liczbaBasedOn(2));
+            assertSame(Integer.valueOf(64), Integer.valueOf(naturalna.liczbaBasedOn(16)));					// czy podana referencja wskazuje na obiekt
             //assertSame("b³d assertSame", naturalna.liczbaBasedOn(2),"1100100");                            // sprawdza poprawnosc parametrów
     }
 }
